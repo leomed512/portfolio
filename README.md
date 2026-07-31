@@ -1,6 +1,6 @@
 # Leonardo Medina — Forestry, Environment & GIS Portfolio
 
-[![Live Portfolio](https://img.shields.io/badge/Live%20Portfolio-GitHub%20Pages-2f6f63?style=flat-square)](https://leomed512.github.io/leomedina/)
+[![Live Portfolio](https://img.shields.io/badge/Live%20Portfolio-GitHub%20Pages-2f6f63?style=flat-square)](https://leomed512.github.io/portfolio/)
 [![Language](https://img.shields.io/badge/Content-English%20%7C%20Spanish-214f47?style=flat-square)](#languages)
 [![Built with](https://img.shields.io/badge/Built%20with-HTML%20%7C%20CSS%20%7C%20JavaScript-b86f36?style=flat-square)](#technology-stack)
 
@@ -15,8 +15,8 @@ Data analysis and automation are integrated throughout both areas as cross-funct
 
 ## Live Website
 
-- **English:** [leomed512.github.io/leomedina](https://leomed512.github.io/leomedina/)
-- **Spanish:** [leomed512.github.io/leomedina/index_es.html](https://leomed512.github.io/leomedina/index_es.html)
+- **Spanish:** [leomed512.github.io/portfolio](https://leomed512.github.io/portfolio/)
+- **English:** [leomed512.github.io/portfolio/index_en.html](https://leomed512.github.io/portfolio/index_en.html)
 
 ## Portfolio Scope
 
