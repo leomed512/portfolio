@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Caso de estudio: Sistema de Alerta Temprana del r&iacute;o Milla | Leonardo Medina
+  </title>
+  <meta content="Caso de estudio sobre caracterizaci&oacute;n geoespacial e hidrometeorol&oacute;gica de la microcuenca del r&iacute;o Milla para un sistema comunitario de alerta temprana." name="description"/>
+  <meta content="index,follow" name="robots"/>
+  <link href="https://leomed512.github.io/leomedina/sat-rio-milla-es.html" rel="canonical"/>
+  <link href="https://leomed512.github.io/leomedina/sat-rio-milla-es.html" hreflang="es" rel="alternate"/>
+  <link href="https://leomed512.github.io/leomedina/sat-rio-milla.html" hreflang="en" rel="alternate"/>
+  <link href="https://leomed512.github.io/leomedina/" hreflang="x-default" rel="alternate"/>
+  <meta content="website" property="og:type"/>
+  <meta content="Caso de estudio: Sistema de Alerta Temprana del r&iacute;o Milla | Leonardo Medina" property="og:title"/>
+  <meta content="Caso de estudio sobre caracterizaci&oacute;n geoespacial e hidrometeorol&oacute;gica de la microcuenca del r&iacute;o Milla para un sistema comunitario de alerta temprana." property="og:description"/>
+  <meta content="https://res.cloudinary.com/arawato666/image/upload/v1691507746/leomedina_web/logo-leo_kvdtus.png" property="og:image"/>
+  <meta content="https://leomed512.github.io/leomedina/sat-rio-milla-es.html" property="og:url"/>
+  <link href="https://res.cloudinary.com/arawato666/image/upload/v1691507746/leomedina_web/logo-leo_kvdtus.png" rel="icon"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;family=Raleway:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
+  <link href="assets/css/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <a class="skip-link" href="#main-content">
+   Saltar al contenido
+  </a>
+  <button aria-controls="sidebar" aria-expanded="false" aria-label="Abrir men&uacute;" class="mobile-toggle" type="button">
+   <i aria-hidden="true" class="bi bi-list">
+   </i>
+  </button>
+  <aside aria-label="Navegaci&oacute;n principal" class="sidebar" id="sidebar">
+   <img alt="Leonardo Medina" class="profile-photo" src="https://res.cloudinary.com/arawato666/image/upload/v1785267055/profile-pic_1_ksohqr.png"/>
+   <p class="sidebar-name">
+    Leonardo Medina
+   </p>
+   <p class="sidebar-role">
+    Forestal &middot; Medioambiente &middot; GIS
+   </p>
+   <div aria-label="Enlaces profesionales" class="socials">
+    <a aria-label="LinkedIn" href="https://www.linkedin.com/in/leomedinast/" rel="noopener noreferrer" target="_blank">
+     <i aria-hidden="true" class="bi bi-linkedin">
+     </i>
+    </a>
+    <a aria-label="GitHub" href="https://github.com/leomed512/" rel="noopener noreferrer" target="_blank">
+     <i aria-hidden="true" class="bi bi-github">
+     </i>
+    </a>
+    <a aria-label="Email" href="mailto:leomedinast@gmail.com">
+     <i aria-hidden="true" class="bi bi-envelope">
+     </i>
+    </a>
+   </div>
+   <nav>
+    <ul class="side-nav">
+     <li>
+      <a class="" href="index_es.html">
+       <i aria-hidden="true" class="bi bi-house">
+       </i>
+       Inicio
+      </a>
+     </li>
+     <li>
+      <a class="" href="forestal_es.html">
+       <i aria-hidden="true" class="bi bi-tree">
+       </i>
+       Forestal y ambiental
+      </a>
+     </li>
+     <li>
+      <a class="active" href="gis_es.html">
+       <i aria-hidden="true" class="bi bi-globe2">
+       </i>
+       Geoespacial (GIS)
+      </a>
+     </li>
+     <li>
+      <a href="index_es.html#work">
+       <i aria-hidden="true" class="bi bi-briefcase">
+       </i>
+       Trabajo destacado
+      </a>
+     </li>
+     <li>
+      <a href="forestal_es.html#research">
+       <i aria-hidden="true" class="bi bi-journal-text">
+       </i>
+       Publicaciones
+      </a>
+     </li>
+     <li>
+      <a href="#contact">
+       <i aria-hidden="true" class="bi bi-envelope">
+       </i>
+       Contacto
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <a class="language-link" href="sat-rio-milla.html" lang="en">
+    <i aria-hidden="true" class="bi bi-translate">
+    </i>
+    English
+   </a>
+   <a aria-label="Ir a la p&aacute;gina de inicio" class="sidebar-logo" href="index_es.html">
+    <img alt="Logo de Leonardo Medina" loading="lazy" src="https://res.cloudinary.com/arawato666/image/upload/v1711993726/Leo-Logo_y855da.png"/>
+   </a>
+  </aside>
+  <main id="main-content">
+   <section class="hero compact">
+    <div class="hero-content">
+     <span class="eyebrow">
+      Caso de estudio &middot; Proyecto actual
+     </span>
+     <h1>
+      Modernizaci&oacute;n del Sistema de Alerta Temprana del r&iacute;o Milla
+     </h1>
+     <p>
+      Caracterizaci&oacute;n ambiental, geoespacial e hidrometeorol&oacute;gica para apoyar la gesti&oacute;n comunitaria del riesgo ante inundaciones torrenciales en M&eacute;rida, Venezuela.
+     </p>
+     <div class="hero-actions">
+      <a class="btn-brand" href="gis_es.html">
+       <i aria-hidden="true" class="bi bi-arrow-left">
+       </i>
+       Volver al perfil GIS
+      </a>
+     </div>
+    </div>
+   </section>
+   <section class="section case-context">
+    <div class="context-layout">
+     <div class="context-title">
+      <span class="kicker">
+       Contexto del proyecto
+      </span>
+      <h2>
+       Expansi&oacute;n de una base operativa existente
+      </h2>
+     </div>
+     <div class="context-copy">
+      <p>
+       La Unidad de Respuesta Operativa es una ONG de gestión de riesgos que ha constru&iacute;do un sistema comunitario de
+              monitoreo y comunicaci&oacute;n ante crecidas en la microcuenca del r&iacute;o Milla,
+              localizada en una zona metropolitana y monta&ntilde;osa de los Andes venezolanos.
+              Su funcionamiento combina observaciones del nivel del cauce mediante
+              limn&iacute;metros calibrados, pluvi&oacute;metros comunitarios, registros hist&oacute;ricos,
+              productos SIG y reportes directos de habitantes y personal operativo.
+      </p>
+      <p>
+       Esta capacidad local constituye el punto de partida del proyecto. La
+              modernizaci&oacute;n busca organizar y conectar los componentes existentes,
+              reducir tareas manuales y facilitar una interpretaci&oacute;n m&aacute;s oportuna
+              de las condiciones de la microcuenca.
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="section section-band case-objective">
+    <div class="band-inner">
+     <span class="kicker">
+      Objetivo
+     </span>
+     <h2>
+      Hacia un SAT integrado y semiautomatizado
+     </h2>
+     <p>
+      La propuesta busca centralizar datos de campo y estaciones meteorol&oacute;gicas,
+            incorporar sensores, datos meteorol&oacute;gicos satelitales y registros comunitarios
+            dentro de un flujo de trabajo semiautomatizado. La informaci&oacute;n podr&aacute;
+            visualizarse mediante mapas, indicadores y paneles operativos que apoyen
+            la evaluaci&oacute;n de eventos y la activaci&oacute;n de alertas.
+     </p>
+     <p class="band-note">
+      El sistema apoyar&aacute; a la URO y a la comunidad en el monitoreo y la toma
+            de decisiones, fortaleciendo la respuesta ante crecidas torrenciales en
+            un contexto de cambio clim&aacute;tico y de alta sensibilidad geomorfol&oacute;gica
+            e hidrol&oacute;gica de la microcuenca.
+     </p>
+    </div>
+   </section>
+   <section class="section section-work">
+    <div class="section-heading">
+     <span class="kicker">
+      Trabajo realizado
+     </span>
+     <h2>
+      Dise&ntilde;o t&eacute;cnico y desarrollo de los componentes iniciales
+     </h2>
+     <p>
+      He participado en el dise&ntilde;o de la propuesta de modernizaci&oacute;n
+      y el desarrollo de los primeros componentes hidrometeorol&oacute;gicos y
+      geoespaciales del sistema.
+     </p>
+    </div>
+    <div class="row g-4">
+     <div class="col-lg-4">
+      <article class="feature-card feature-system">
+       <div class="icon">
+        <i aria-hidden="true" class="bi bi-diagram-3">
+        </i>
+       </div>
+       <h3>
+        Dise&ntilde;o del sistema
+       </h3>
+       <p>
+        Definici&oacute;n de una arquitectura modular para integrar fuentes de datos,
+          automatizaci&oacute;n, procesamiento, almacenamiento en bases de datos y la nube, visualizaci&oacute;n
+          y alertas, considerando los recursos t&eacute;cnicos y operativos de la URO.
+       </p>
+      </article>
+     </div>
+     <div class="col-lg-4">
+      <article class="feature-card feature-hydro">
+       <div class="icon">
+        <i aria-hidden="true" class="bi bi-cloud-rain">
+        </i>
+       </div>
+       <h3>
+        Componente hidrometeorol&oacute;gico
+       </h3>
+       <p>
+        Automatizaci&oacute;n de la adquisici&oacute;n y consolidaci&oacute;n de datos de estaciones meteorol&oacute;gicas propias y datos satelitales, an&aacute;lisis
+          de series temporales para el modelado estad&iacute;stico y el establecimiento de umbrales de alerta de variables clave.
+       </p>
+      </article>
+     </div>
+     <div class="col-lg-4">
+      <article class="feature-card feature-gis">
+       <div class="icon">
+        <i aria-hidden="true" class="bi bi-map">
+        </i>
+       </div>
+       <h3>
+        Componente geoespacial
+       </h3>
+       <p>
+        Caracterizaci&oacute;n f&iacute;sico-natural, geomorfol&oacute;gica e hidrol&oacute;gica de la
+          microcuenca, captura y estructuraci&oacute;n de datos territoriales y elaboraci&oacute;n
+          de cartograf&iacute;a e indicadores para el an&aacute;lisis ambiental y del riesgo.
+       </p>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section class="section section-green section-data">
+    <div class="section-heading">
+     <span class="kicker">
+      Datos y metodolog&iacute;a
+     </span>
+     <h2>
+      Integraci&oacute;n de fuentes locales, territoriales y satelitales
+     </h2>
+     <p>
+      El trabajo combina observaciones de campo, registros meteorol&oacute;gicos,
+      informaci&oacute;n hist&oacute;rica y datos geoespaciales para obtener una lectura
+      m&aacute;s completa de las condiciones de la microcuenca.
+     </p>
+    </div>
+    <div class="row g-4">
+     <div class="col-lg-6">
+      <article class="data-panel">
+       <h3>
+        Fuentes de informaci&oacute;n
+       </h3>
+       <ul class="source-list">
+        <li>
+         <strong>
+          Monitoreo local:
+         </strong>
+         estaciones meteorol&oacute;gicas, pluvi&oacute;metros y limn&iacute;metros comunitarios.
+        </li>
+        <li>
+         <strong>
+          Registros hist&oacute;ricos:
+         </strong>
+         eventos de crecida e incidencias documentadas por la URO y la comunidad.
+        </li>
+        <li>
+         <strong>
+          Relieve e hidrolog&iacute;a:
+         </strong>
+         Derivados de ALOS PALSAR, Copernicus DEM.
+        </li>
+        <li>
+         <strong>
+          Cobertura y medio f&iacute;sico:
+         </strong>
+         Sentinel-2, Dynamic World, SoilGrids, USGS e INGEOMIN.
+        </li>
+        <li>
+         <strong>
+          Cartograf&iacute;a base:
+         </strong>
+         OpenStreetMap, GADM y fuentes institucionales.
+        </li>
+        <li>
+         <strong>
+          Contexto hidrometeorol&oacute;gico:
+         </strong>
+         Weathercloud (estaciones meteorol&oacute;gicas), GPM IMERG, ERA5-Land y CHIRPS.
+        </li>
+       </ul>
+      </article>
+     </div>
+     <div class="col-lg-6">
+      <article class="data-panel">
+       <h3>
+        Tecnolog&iacute;as y procesos
+       </h3>
+       <div class="tech-group">
+        <h4>
+         Procesamiento y automatizaci&oacute;n
+        </h4>
+        <ul class="tags technology-tags">
+         <li>
+          Python
+         </li>
+         <li>
+          Pandas
+         </li>
+         <li>
+          Pydantic
+         </li>
+         <li>
+          Jupyter
+         </li>
+        </ul>
+       </div>
+       <div class="tech-group">
+        <h4>
+         SIG y geoprocesamiento
+        </h4>
+        <ul class="tags technology-tags">
+         <li>
+          QGIS
+         </li>
+         <li>
+          SAGA GIS
+         </li>
+         <li>
+          Orfeo ToolBox
+         </li>
+         <li>
+          GDAL
+         </li>
+        </ul>
+       </div>
+       <div class="tech-group">
+        <h4>
+         Datos geoespaciales
+        </h4>
+        <ul class="tags technology-tags">
+         <li>
+          GeoPandas
+         </li>
+         <li>
+          Rasterio
+         </li>
+         <li>
+          ETL geoespacial
+         </li>
+        </ul>
+       </div>
+       <div class="tech-group">
+        <h4>
+         M&eacute;todos de an&aacute;lisis
+        </h4>
+        <ul class="tags technology-tags">
+         <li>
+          Teledetecci&oacute;n
+         </li>
+         <li>
+          Series temporales
+         </li>
+         <li>
+          AHP
+         </li>
+        </ul>
+       </div>
+      </article>
+     </div>
+    </div>
+   </section>
+   
+   <section class="section case-results">
+    <div class="section-heading">
+     <span class="kicker">
+      Resultados actuales
+     </span>
+     <h2>
+      Avances t&eacute;cnicos y productos desarrollados
+     </h2>
+     <p>
+      El trabajo realizado comprende el desarrollo de los componentes
+      hidrometeorol&oacute;gico y geoespacial, junto con el dise&ntilde;o t&eacute;cnico
+      de las siguientes etapas del sistema.
+     </p>
+    </div>
+    <div class="results-grid">
+     <article class="result-card result-hydro">
+      <span class="result-index">
+       01
+      </span>
+      <div>
+       <h3>
+        Componente hidrometeorol&oacute;gico
+       </h3>
+       <p>
+        Desarrollo de flujos semiautomatizados para adquirir,
+                        consolidar y actualizar datos de dos estaciones meteorol&oacute;gicas,
+                        junto con el an&aacute;lisis exploratorio y comparativo de sus series
+                        temporales, continuidad y eventos de precipitaci&oacute;n.
+       </p>
+      </div>
+     </article>
+     <article class="result-card result-data">
+      <span class="result-index">
+       02
+      </span>
+      <div>
+       <h3>
+        Preparaci&oacute;n de datos geoespaciales
+       </h3>
+       <p>
+        Recopilaci&oacute;n, evaluaci&oacute;n, depuraci&oacute;n y estandarizaci&oacute;n de
+                        informaci&oacute;n sobre relieve y drenaje, medio f&iacute;sico y cobertura
+                        del terreno, infraestructura, exposici&oacute;n y otros condicionantes
+                        territoriales.
+       </p>
+      </div>
+     </article>
+     <article class="result-card result-analysis">
+      <span class="result-index">
+       03
+      </span>
+      <div>
+       <h3>
+        An&aacute;lisis territorial y morfom&eacute;trico
+       </h3>
+       <p>
+        Delimitaci&oacute;n y caracterizaci&oacute;n de la microcuenca y sus unidades
+                        internas mediante variables del terreno, red de drenaje e
+                        indicadores morfom&eacute;tricos, como insumo para interpretar su
+                        respuesta hidrol&oacute;gica y apoyar la evaluaci&oacute;n de susceptibilidad
+                        y riesgo.
+       </p>
+      </div>
+     </article>
+     <article class="result-card result-docs">
+      <span class="result-index">
+       04
+      </span>
+      <div>
+       <h3>
+        Dise&ntilde;o y documentaci&oacute;n t&eacute;cnica
+       </h3>
+       <p>
+        Elaboraci&oacute;n de informes, cartograf&iacute;a e indicadores, adem&aacute;s de
+                        una propuesta integral de modernizaci&oacute;n que define la
+                        arquitectura, los componentes, los flujos de informaci&oacute;n y las
+                        etapas previstas para la evoluci&oacute;n del SAT.
+       </p>
+      </div>
+     </article>
+    </div>
+   </section>
+   <section class="section project-visuals-section">
+  <div class="section-heading">
+    <span class="kicker">
+      Preview
+    </span>
+
+    <h2>
+      Cartografía y análisis preliminares
+    </h2>
+
+    <p>
+      Muestras del componente geoespacial e hidrometeorológico desarrollado
+      hasta el momento.
+    </p>
+  </div>
+
+  <div class="project-visuals-grid">
+    <figure class="project-visual-card">
+      <button
+        class="lightbox-trigger"
+        type="button"
+        data-lightbox-index="0"
+        aria-label="Ampliar cartografía preliminar del SAT"
+      >
+        <img
+          src="https://res.cloudinary.com/arawato666/image/upload/v1785256643/uro_sat_r0kgag.png"
+          alt="Cartografía preliminar del Sistema de Alerta Temprana del río Milla"
+          loading="lazy"
+          decoding="async"
+        >
+
+        <span class="lightbox-zoom" aria-hidden="true">
+          <i class="bi bi-arrows-fullscreen"></i>
+        </span>
+      </button>
+
+      <figcaption>
+        <strong>
+          Cartografía preliminar del SAT
+        </strong>
+
+        <span>
+          Integración de información territorial, ambiental e hidrológica
+          de la microcuenca.
+        </span>
+      </figcaption>
+    </figure>
+
+    <figure class="project-visual-card">
+      <button
+        class="lightbox-trigger"
+        type="button"
+        data-lightbox-index="1"
+        aria-label="Ampliar resultado del análisis hidrometeorológico"
+      >
+        <img
+          src="https://res.cloudinary.com/arawato666/image/upload/v1785507172/output_cars7j.png"
+          alt="Resultado gráfico preliminar del análisis hidrometeorológico"
+          loading="lazy"
+          decoding="async"
+        >
+
+        <span class="lightbox-zoom" aria-hidden="true">
+          <i class="bi bi-arrows-fullscreen"></i>
+        </span>
+      </button>
+
+      <figcaption>
+        <strong>
+          Análisis hidrometeorológico
+        </strong>
+
+        <span>
+          Gráfico derivado del procesamiento y evaluación
+          de las series meteorológicas disponibles de las estaciones meteorológicas.
+        </span>
+      </figcaption>
+    </figure>
+  </div>
+
+  <p class="project-note">
+    Los productos públicos definitivos y el repositorio depurado
+    se encuentran en preparación.
+  </p>
+</section>
+   <section class="section section-soft case-roadmap">
+    <div class="section-heading">
+     <h2>
+      Pr&oacute;ximos pasos del SAT
+     </h2>
+     <p>
+      Las siguientes etapas se enfocan en convertir los componentes desarrollados
+      en un flujo operativo integrado, ajustado a la disponibilidad de datos, equipos y recursos.
+     </p>
+    </div>
+    <div class="roadmap">
+     <article class="roadmap-step">
+      <span class="roadmap-number">
+       1
+      </span>
+      <div>
+       <h3>
+        Integraci&oacute;n operativa
+       </h3>
+       <ul>
+        <li>
+         Centralizaci&oacute;n y estandarizaci&oacute;n de series hist&oacute;ricas.
+        </li>
+        <li>
+         Automatizaci&oacute;n de la ingesti&oacute;n y control de calidad.
+        </li>
+        <li>
+         Visualizaci&oacute;n de datos, sensores, eventos y cartograf&iacute;a.
+        </li>
+        <li>
+         Generaci&oacute;n de alertas semiautom&aacute;ticas para el equipo de la URO.
+        </li>
+       </ul>
+      </div>
+     </article>
+     <article class="roadmap-step">
+      <span class="roadmap-number">
+       2
+      </span>
+      <div>
+       <h3>
+        Ampliaci&oacute;n y refinamiento
+       </h3>
+       <ul>
+        <li>
+         Incorporaci&oacute;n gradual de nuevas fuentes y puntos de monitoreo.
+        </li>
+        <li>
+         Actualizaci&oacute;n de la zonificaci&oacute;n territorial y del riesgo.
+        </li>
+        <li>
+         Calibraci&oacute;n de umbrales con eventos documentados.
+        </li>
+        <li>
+         Desarrollo posterior de modelos hidrol&oacute;gicos e hidr&aacute;ulicos HEC-HMS y HEC-RAS.
+        </li>
+       </ul>
+      </div>
+     </article>
+    </div>
+   </section>
+
+
+
+   <section class="contact-strip" id="contact">
+    <h2>
+     Contacto
+    </h2>
+    <p>Estoy disponible para oportunidades de trabajo presencial, de campo, híbrido o remoto.</p>
+
+    <div class="contact-links">
+     <a href="mailto:leomedinast@gmail.com">
+      <i aria-hidden="true" class="bi bi-envelope">
+      </i>
+      leomedinast@gmail.com
+     </a>
+     <a href="https://www.linkedin.com/in/leomedinast/" rel="noopener noreferrer" target="_blank">
+      <i aria-hidden="true" class="bi bi-linkedin">
+      </i>
+      LinkedIn
+     </a>
+     <a href="https://github.com/leomed512/" rel="noopener noreferrer" target="_blank">
+      <i aria-hidden="true" class="bi bi-github">
+      </i>
+      GitHub
+     </a>
+    </div>
+   </section>
+  </main>
+  <footer class="site-footer">
+   <span>
+    &copy;
+    <span data-year="">
+    </span>
+    Leonardo Medina
+   </span>
+   <img alt="Logo de Leonardo Medina" class="footer-logo" loading="lazy" src="https://res.cloudinary.com/arawato666/image/upload/v1711993726/Leo-Logo_y855da.png"/>
+  </footer>
+  <button aria-label="Volver arriba" class="back-to-top" type="button">
+   <i aria-hidden="true" class="bi bi-arrow-up">
+   </i>
+  </button>
+  <script src="assets/js/main.js">
+  </script>
+  <dialog
+  class="project-lightbox"
+  id="project-lightbox"
+  aria-labelledby="lightbox-title"
+>
+  <div class="lightbox-container">
+    <button
+      class="lightbox-close"
+      type="button"
+      aria-label="Cerrar imagen ampliada"
+    >
+      <i class="bi bi-x-lg" aria-hidden="true"></i>
+    </button>
+
+    <button
+      class="lightbox-navigation lightbox-previous"
+      type="button"
+      aria-label="Ver imagen anterior"
+    >
+      <i class="bi bi-chevron-left" aria-hidden="true"></i>
+    </button>
+
+    <figure class="lightbox-content">
+      <img
+        id="lightbox-image"
+        src=""
+        alt=""
+      >
+
+      <figcaption>
+        <strong id="lightbox-title"></strong>
+        <span id="lightbox-description"></span>
+      </figcaption>
+    </figure>
+
+    <button
+      class="lightbox-navigation lightbox-next"
+      type="button"
+      aria-label="Ver imagen siguiente"
+    >
+      <i class="bi bi-chevron-right" aria-hidden="true"></i>
+    </button>
+  </div>
+</dialog>
+ </body>
+</html>

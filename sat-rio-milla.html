@@ -1,0 +1,867 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+      Case Study: Milla River Early Warning System | Leonardo Medina
+    </title>
+
+    <meta
+      name="description"
+      content="Case study on the modernization of the Milla River community-based Early Warning System through hydrometeorological analysis, geospatial data, automation, and watershed characterization."
+    >
+
+    <meta name="robots" content="index,follow">
+
+    <link
+      rel="canonical"
+      href="https://leomed512.github.io/leomedina/sat-rio-milla.html"
+    >
+
+    <link
+      rel="alternate"
+      hreflang="en-US"
+      href="https://leomed512.github.io/leomedina/sat-rio-milla.html"
+    >
+
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://leomed512.github.io/leomedina/sat-rio-milla.html"
+    >
+
+    <link
+      rel="alternate"
+      hreflang="es"
+      href="https://leomed512.github.io/leomedina/sat-rio-milla-es.html"
+    >
+
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://leomed512.github.io/leomedina/"
+    >
+
+    <meta property="og:type" content="website">
+
+    <meta
+      property="og:title"
+      content="Case Study: Milla River Early Warning System | Leonardo Medina"
+    >
+
+    <meta
+      property="og:description"
+      content="Modernization of a community-based Early Warning System through hydrometeorological analysis, geospatial data, automation, and watershed characterization."
+    >
+
+    <meta
+      property="og:image"
+      content="https://res.cloudinary.com/arawato666/image/upload/v1691507746/leomedina_web/logo-leo_kvdtus.png"
+    >
+
+    <meta
+      property="og:url"
+      content="https://leomed512.github.io/leomedina/sat-rio-milla.html"
+    >
+
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/arawato666/image/upload/v1691507746/leomedina_web/logo-leo_kvdtus.png"
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;family=Raleway:wght@500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    >
+
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    >
+
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    >
+
+    <link href="assets/css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content">
+      Skip to content
+    </a>
+
+    <button
+      class="mobile-toggle"
+      type="button"
+      aria-label="Open menu"
+      aria-controls="sidebar"
+      aria-expanded="false"
+    >
+      <i class="bi bi-list" aria-hidden="true"></i>
+    </button>
+
+    <aside
+      class="sidebar"
+      id="sidebar"
+      aria-label="Primary navigation"
+    >
+      <img
+        class="profile-photo"
+        src="https://res.cloudinary.com/arawato666/image/upload/v1785267055/profile-pic_1_ksohqr.png"
+        alt="Leonardo Medina"
+      >
+
+      <p class="sidebar-name">
+        Leonardo Medina
+      </p>
+
+      <p class="sidebar-role">
+        Forestry · Environment · GIS
+      </p>
+
+      <div class="socials" aria-label="Professional links">
+        <a
+          href="https://www.linkedin.com/in/leomedinast/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+          <i class="bi bi-linkedin" aria-hidden="true"></i>
+        </a>
+
+        <a
+          href="https://github.com/leomed512/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <i class="bi bi-github" aria-hidden="true"></i>
+        </a>
+
+        <a
+          href="mailto:leomedinast@gmail.com"
+          aria-label="Email"
+        >
+          <i class="bi bi-envelope" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <nav>
+        <ul class="side-nav">
+          <li>
+            <a href="index.html">
+              <i class="bi bi-house" aria-hidden="true"></i>
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="forestry.html">
+              <i class="bi bi-tree" aria-hidden="true"></i>
+              Forestry &amp; Environment
+            </a>
+          </li>
+
+          <li>
+            <a class="active" href="geospatial.html">
+              <i class="bi bi-globe2" aria-hidden="true"></i>
+              Geospatial (GIS)
+            </a>
+          </li>
+
+          <li>
+            <a href="index.html#work">
+              <i class="bi bi-briefcase" aria-hidden="true"></i>
+              Selected Work
+            </a>
+          </li>
+
+          <li>
+            <a href="forestry.html#research">
+              <i class="bi bi-journal-text" aria-hidden="true"></i>
+              Publications
+            </a>
+          </li>
+
+          <li>
+            <a href="#contact">
+              <i class="bi bi-envelope" aria-hidden="true"></i>
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <a
+        class="language-link"
+        href="sat-rio-milla-es.html"
+        lang="es"
+      >
+        <i class="bi bi-translate" aria-hidden="true"></i>
+        Español
+      </a>
+
+      <a
+        class="sidebar-logo"
+        href="index.html"
+        aria-label="Go to the home page"
+      >
+        <img
+          src="https://res.cloudinary.com/arawato666/image/upload/v1711993726/Leo-Logo_y855da.png"
+          alt="Leonardo Medina logo"
+          loading="lazy"
+        >
+      </a>
+    </aside>
+
+    <main id="main-content">
+      <section class="hero compact">
+        <div class="hero-content">
+          <span class="eyebrow">
+            Case Study · Current Project
+          </span>
+
+          <h1>
+            Modernization of the Milla River Early Warning System (EWS)
+          </h1>
+
+          <p>
+            Environmental, geospatial, and hydrometeorological characterization
+            supporting community-based risk management for flash floods in
+            Mérida, Venezuela.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn-brand" href="geospatial.html">
+              <i class="bi bi-arrow-left" aria-hidden="true"></i>
+              Back to GIS Profile
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section case-context">
+        <div class="context-layout">
+          <div class="context-title">
+            <span class="kicker">
+              Project Context
+            </span>
+
+            <h2>
+              Expanding an Existing Operational Foundation
+            </h2>
+          </div>
+
+          <div class="context-copy">
+            <p>
+              Unidad de Respuesta Operativa (URO) is a risk management NGO that has developed a
+              community-based flood monitoring and communication system for the
+              Milla River watershed, located in a mountainous metropolitan area
+              of the Venezuelan Andes. Its current operation combines stream-stage
+              observations from calibrated staff gauges, community rain gauges,
+              historical records, GIS products, and direct reports from residents
+              and operational personnel.
+            </p>
+
+            <p>
+              This local capacity is the project's starting point. The
+              modernization effort is intended to organize and connect the
+              existing components, reduce manual tasks, and support more timely
+              interpretation of watershed conditions.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-band case-objective">
+        <div class="band-inner">
+          <span class="kicker">
+            Objective
+          </span>
+
+          <h2>
+            Toward an Integrated, Semi-Automated Early Warning System
+          </h2>
+
+          <p>
+            The proposed system will centralize field observations and weather
+            station data while progressively incorporating sensors, satellite
+            meteorological products, and community reports into a semi-automated
+            workflow. Maps, indicators, and operational dashboards will support
+            event assessment and warning activation.
+          </p>
+
+          <p class="band-note">
+            The system is designed to support URO personnel and the community in
+            monitoring and decision-making, strengthening preparedness for flash
+            floods in the context of climate change and the watershed's high
+            geomorphological and hydrological sensitivity.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-work">
+        <div class="section-heading">
+          <span class="kicker">
+            Work Completed
+          </span>
+
+          <h2>
+            Technical Design and Development of the Initial Components
+          </h2>
+
+          <p>
+            My work includes designing the modernization proposal and developing
+            the initial hydrometeorological and geospatial components of the
+            system.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <article class="feature-card feature-system">
+              <div class="icon">
+                <i class="bi bi-diagram-3" aria-hidden="true"></i>
+              </div>
+
+              <h3>
+                System Design
+              </h3>
+
+              <p>
+                Definition of a modular architecture integrating data sources,
+                automation, processing, database and cloud storage,
+                visualization, and warning functions while accounting for URO's
+                technical resources and operational requirements.
+              </p>
+            </article>
+          </div>
+
+          <div class="col-lg-4">
+            <article class="feature-card feature-hydro">
+              <div class="icon">
+                <i class="bi bi-cloud-rain" aria-hidden="true"></i>
+              </div>
+
+              <h3>
+                Hydrometeorological Component
+              </h3>
+
+              <p>
+                Automation of data acquisition and consolidation from local
+                weather stations and satellite products, followed by time-series
+                analysis to support statistical modeling and the future
+                definition of warning thresholds for key variables.
+              </p>
+            </article>
+          </div>
+
+          <div class="col-lg-4">
+            <article class="feature-card feature-gis">
+              <div class="icon">
+                <i class="bi bi-map" aria-hidden="true"></i>
+              </div>
+
+              <h3>
+                Geospatial Component
+              </h3>
+
+              <p>
+                Biophysical, geomorphological, and hydrological characterization
+                of the watershed; collection and structuring of territorial data;
+                and development of maps and indicators for environmental and
+                risk analysis.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-green section-data">
+        <div class="section-heading">
+          <span class="kicker">
+            Data and Methodology
+          </span>
+
+          <h2>
+            Integration of Local, Territorial, and Satellite Data
+          </h2>
+
+          <p>
+            The work combines field observations, meteorological records,
+            historical information, and geospatial data to develop a more
+            comprehensive understanding of watershed conditions.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <article class="data-panel">
+              <h3>
+                Data Sources
+              </h3>
+
+              <ul class="source-list">
+                <li>
+                  <strong>Local monitoring:</strong>
+                  automated weather stations, community rain gauges, and staff
+                  gauges.
+                </li>
+
+                <li>
+                  <strong>Historical records:</strong>
+                  documented flood events and incident reports from URO and the
+                  community.
+                </li>
+
+                <li>
+                  <strong>Terrain and hydrology:</strong>
+                  derivatives from ALOS PALSAR and Copernicus DEM.
+                </li>
+
+                <li>
+                  <strong>Land cover and physical environment:</strong>
+                  Sentinel-2, Dynamic World, SoilGrids, USGS, and INGEOMIN data.
+                </li>
+
+                <li>
+                  <strong>Basemap and reference data:</strong>
+                  OpenStreetMap, GADM, and institutional geospatial sources.
+                </li>
+
+                <li>
+                  <strong>Hydrometeorological context:</strong>
+                  Weathercloud station data, GPM IMERG, ERA5-Land, and CHIRPS.
+                </li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="col-lg-6">
+            <article class="data-panel">
+              <h3>
+                Technologies and Processes
+              </h3>
+
+              <div class="tech-group">
+                <h4>
+                  Data Processing and Automation
+                </h4>
+
+                <ul class="tags technology-tags">
+                  <li>Python</li>
+                  <li>Pandas</li>
+                  <li>Pydantic</li>
+                  <li>Jupyter</li>
+                </ul>
+              </div>
+
+              <div class="tech-group">
+                <h4>
+                  GIS and Geoprocessing
+                </h4>
+
+                <ul class="tags technology-tags">
+                  <li>QGIS</li>
+                  <li>SAGA GIS</li>
+                  <li>Orfeo ToolBox</li>
+                  <li>GDAL</li>
+                </ul>
+              </div>
+
+              <div class="tech-group">
+                <h4>
+                  Geospatial Data
+                </h4>
+
+                <ul class="tags technology-tags">
+                  <li>GeoPandas</li>
+                  <li>Rasterio</li>
+                  <li>Geospatial ETL</li>
+                </ul>
+              </div>
+
+              <div class="tech-group">
+                <h4>
+                  Analytical Methods
+                </h4>
+
+                <ul class="tags technology-tags">
+                  <li>Remote Sensing</li>
+                  <li>Time-Series Analysis</li>
+                  <li>AHP</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section case-results">
+        <div class="section-heading">
+          <span class="kicker">
+            Current Results
+          </span>
+
+          <h2>
+            Technical Progress and Deliverables
+          </h2>
+
+          <p>
+            Work completed to date includes development of the
+            hydrometeorological and geospatial components, along with the
+            technical design of subsequent implementation phases.
+          </p>
+        </div>
+
+        <div class="results-grid">
+          <article class="result-card result-hydro">
+            <span class="result-index">
+              01
+            </span>
+
+            <div>
+              <h3>
+                Hydrometeorological Component
+              </h3>
+
+              <p>
+                Development of semi-automated workflows to ingest, consolidate,
+                and update data from two weather stations, combined with
+                exploratory and comparative analysis of time series, data
+                continuity, and precipitation events.
+              </p>
+            </div>
+          </article>
+
+          <article class="result-card result-data">
+            <span class="result-index">
+              02
+            </span>
+
+            <div>
+              <h3>
+                Geospatial Data Preparation
+              </h3>
+
+              <p>
+                Collection, evaluation, cleaning, and standardization of data on
+                terrain and drainage, the physical environment and land cover,
+                infrastructure, exposure, and other territorial constraints.
+              </p>
+            </div>
+          </article>
+
+          <article class="result-card result-analysis">
+            <span class="result-index">
+              03
+            </span>
+
+            <div>
+              <h3>
+                Watershed and Morphometric Analysis
+              </h3>
+
+              <p>
+                Delineation and characterization of the watershed and its
+                internal units using terrain variables, the drainage network,
+                and morphometric indicators to interpret hydrological response
+                and support susceptibility and risk assessment.
+              </p>
+            </div>
+          </article>
+
+          <article class="result-card result-docs">
+            <span class="result-index">
+              04
+            </span>
+
+            <div>
+              <h3>
+                System Design and Technical Documentation
+              </h3>
+
+              <p>
+                Development of reports, maps, and indicators, together with a
+                comprehensive modernization proposal defining the architecture,
+                system components, data flows, and phased implementation plan
+                for the Early Warning System.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section project-visuals-section">
+  <div class="section-heading">
+    <span class="kicker">
+      Preview
+    </span>
+
+    <h2>
+      Preliminary Mapping and Analysis
+    </h2>
+
+    <p>
+      Selected outputs from the geospatial and hydrometeorological components
+      developed to date.
+    </p>
+  </div>
+
+  <div class="project-visuals-grid">
+    <figure class="project-visual-card">
+      <button
+        class="lightbox-trigger"
+        type="button"
+        data-lightbox-index="0"
+        aria-label="Enlarge the preliminary Early Warning System map"
+      >
+        <img
+          src="https://res.cloudinary.com/arawato666/image/upload/v1785256643/uro_sat_r0kgag.png"
+          alt="Preliminary mapping for the Milla River Early Warning System"
+          loading="lazy"
+          decoding="async"
+        >
+
+        <span class="lightbox-zoom" aria-hidden="true">
+          <i class="bi bi-arrows-fullscreen"></i>
+        </span>
+      </button>
+
+      <figcaption>
+        <strong>
+          Preliminary EWS Mapping
+        </strong>
+
+        <span>
+          Integration of territorial, environmental, and hydrological
+          information for the watershed.
+        </span>
+      </figcaption>
+    </figure>
+
+    <figure class="project-visual-card">
+      <button
+        class="lightbox-trigger"
+        type="button"
+        data-lightbox-index="1"
+        aria-label="Enlarge the hydrometeorological analysis chart"
+      >
+        <img
+          src="https://res.cloudinary.com/arawato666/image/upload/v1785507172/output_cars7j.png"
+          alt="Preliminary chart from the hydrometeorological analysis"
+          loading="lazy"
+          decoding="async"
+        >
+
+        <span class="lightbox-zoom" aria-hidden="true">
+          <i class="bi bi-arrows-fullscreen"></i>
+        </span>
+      </button>
+
+      <figcaption>
+        <strong>
+          Hydrometeorological Analysis
+        </strong>
+
+        <span>
+          Chart generated from the processing and evaluation of the available
+          weather-station time series.
+        </span>
+      </figcaption>
+    </figure>
+  </div>
+
+  <p class="project-note">
+    The final public products and curated project repository
+    are currently in preparation.
+  </p>
+</section>
+
+      <section class="section section-soft case-roadmap">
+        <div class="section-heading">
+          <h2>
+            Next Steps for the EWS
+          </h2>
+
+          <p>
+            The next phases will focus on transforming the developed components
+            into an integrated operational workflow, aligned with available
+            data, equipment, and resources.
+          </p>
+        </div>
+
+        <div class="roadmap">
+          <article class="roadmap-step">
+            <span class="roadmap-number">
+              1
+            </span>
+
+            <div>
+              <h3>
+                Operational Integration
+              </h3>
+
+              <ul>
+                <li>
+                  Centralization and standardization of historical time series.
+                </li>
+
+                <li>
+                  Automated data ingestion and quality control.
+                </li>
+
+                <li>
+                  Visualization of data, sensors, events, and mapping products.
+                </li>
+
+                <li>
+                  Generation of semi-automated warnings for the URO team.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="roadmap-step">
+            <span class="roadmap-number">
+              2
+            </span>
+
+            <div>
+              <h3>
+                Expansion and Refinement
+              </h3>
+
+              <ul>
+                <li>
+                  Gradual integration of additional data sources and monitoring
+                  locations.
+                </li>
+
+                <li>
+                  Updates to territorial and risk zoning.
+                </li>
+
+                <li>
+                  Warning-threshold calibration using documented events.
+                </li>
+
+                <li>
+                  Subsequent development of HEC-HMS hydrologic and HEC-RAS
+                  hydraulic models.
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-strip" id="contact">
+        <h2>
+          Contact
+        </h2>
+        <p>I am available for on-site, field, hybrid, or remote work opportunities.</p>
+
+
+        <div class="contact-links">
+          <a href="mailto:leomedinast@gmail.com">
+            <i class="bi bi-envelope" aria-hidden="true"></i>
+            leomedinast@gmail.com
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/leomedinast/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="bi bi-linkedin" aria-hidden="true"></i>
+            LinkedIn
+          </a>
+
+          <a
+            href="https://github.com/leomed512/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="bi bi-github" aria-hidden="true"></i>
+            GitHub
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>
+        © <span data-year></span> Leonardo Medina
+      </span>
+
+      <img
+        src="https://res.cloudinary.com/arawato666/image/upload/v1711993726/Leo-Logo_y855da.png"
+        alt="Leonardo Medina logo"
+        class="footer-logo"
+        loading="lazy"
+      >
+    </footer>
+
+    <button
+      class="back-to-top"
+      type="button"
+      aria-label="Back to top"
+    >
+      <i class="bi bi-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <script src="assets/js/main.js"></script>
+    <dialog
+  class="project-lightbox"
+  id="project-lightbox"
+  aria-labelledby="lightbox-title"
+>
+  <div class="lightbox-container">
+    <button
+      class="lightbox-close"
+      type="button"
+      aria-label="Cerrar imagen ampliada"
+    >
+      <i class="bi bi-x-lg" aria-hidden="true"></i>
+    </button>
+
+    <button
+      class="lightbox-navigation lightbox-previous"
+      type="button"
+      aria-label="Ver imagen anterior"
+    >
+      <i class="bi bi-chevron-left" aria-hidden="true"></i>
+    </button>
+
+    <figure class="lightbox-content">
+      <img
+        id="lightbox-image"
+        src=""
+        alt=""
+      >
+
+      <figcaption>
+        <strong id="lightbox-title"></strong>
+        <span id="lightbox-description"></span>
+      </figcaption>
+    </figure>
+
+    <button
+      class="lightbox-navigation lightbox-next"
+      type="button"
+      aria-label="Ver imagen siguiente"
+    >
+      <i class="bi bi-chevron-right" aria-hidden="true"></i>
+    </button>
+  </div>
+</dialog>
+  </body>
+</html>

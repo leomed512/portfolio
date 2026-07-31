@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GIS Analyst | Leonardo Medina</title>
+  <meta
+    name="description"
+    content="Leonardo Medina's GIS portfolio featuring spatial analysis, hydrology, remote sensing, environmental data, QGIS, Python, and Google Earth Engine."
+  >
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://leomed512.github.io/leomedina/geospatial.html">
+  <link rel="alternate" hreflang="en" href="https://leomed512.github.io/leomedina/geospatial.html">
+  <link rel="alternate" hreflang="es" href="https://leomed512.github.io/leomedina/gis_es.html">
+  <link rel="alternate" hreflang="x-default" href="https://leomed512.github.io/leomedina/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="GIS Analyst | Leonardo Medina">
+  <meta
+    property="og:description"
+    content="GIS projects in spatial analysis, hydrology, remote sensing, environmental data, QGIS, Python, and Google Earth Engine."
+  >
+  <meta
+    property="og:image"
+    content="https://res.cloudinary.com/arawato666/image/upload/v1691507746/leomedina_web/logo-leo_kvdtus.png"
+  >
+  <meta property="og:url" content="https://leomed512.github.io/leomedina/geospatial.html">
+
+  <link
+    rel="icon"
+    href="https://res.cloudinary.com/arawato666/image/upload/v1691507746/leomedina_web/logo-leo_kvdtus.png"
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;family=Raleway:wght@500;600;700;800&amp;display=swap"
+    rel="stylesheet"
+  >
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <button
+    class="mobile-toggle"
+    type="button"
+    aria-label="Open menu"
+    aria-controls="sidebar"
+    aria-expanded="false"
+  >
+    <i class="bi bi-list" aria-hidden="true"></i>
+  </button>
+
+  <aside class="sidebar" id="sidebar" aria-label="Primary navigation">
+    <img
+      class="profile-photo"
+      src="https://res.cloudinary.com/arawato666/image/upload/v1785267055/profile-pic_1_ksohqr.png"
+      alt="Leonardo Medina"
+    >
+
+    <p class="sidebar-name">Leonardo Medina</p>
+    <p class="sidebar-role">Forestry · Environment · GIS</p>
+
+    <div class="socials" aria-label="Professional links">
+      <a
+        href="https://www.linkedin.com/in/leomedinast/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn"
+      >
+        <i class="bi bi-linkedin" aria-hidden="true"></i>
+      </a>
+
+      <a
+        href="https://github.com/leomed512/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="GitHub"
+      >
+        <i class="bi bi-github" aria-hidden="true"></i>
+      </a>
+
+      <a href="mailto:leomedinast@gmail.com" aria-label="Email">
+        <i class="bi bi-envelope" aria-hidden="true"></i>
+      </a>
+    </div>
+
+    <nav>
+      <ul class="side-nav">
+        <li>
+          <a href="index.html">
+            <i class="bi bi-house" aria-hidden="true"></i>
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="forestry.html">
+            <i class="bi bi-tree" aria-hidden="true"></i>
+            Forestry &amp; Environment
+          </a>
+        </li>
+
+        <li>
+          <a class="active" href="geospatial.html">
+            <i class="bi bi-globe2" aria-hidden="true"></i>
+            Geospatial (GIS)
+          </a>
+        </li>
+
+        <li>
+          <a href="index.html#work">
+            <i class="bi bi-briefcase" aria-hidden="true"></i>
+            Selected Work
+          </a>
+        </li>
+
+        <li>
+          <a href="forestry.html#research">
+            <i class="bi bi-journal-text" aria-hidden="true"></i>
+            Publications
+          </a>
+        </li>
+
+        <li>
+          <a href="#contact">
+            <i class="bi bi-envelope" aria-hidden="true"></i>
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <a class="language-link" href="gis_es.html" lang="es">
+      <i class="bi bi-translate" aria-hidden="true"></i>
+      Español
+    </a>
+
+    <a
+      href="index.html"
+      class="sidebar-logo"
+      aria-label="Go to the home page"
+    >
+      <img
+        src="https://res.cloudinary.com/arawato666/image/upload/v1711993726/Leo-Logo_y855da.png"
+        alt="Leonardo Medina logo"
+        loading="lazy"
+      >
+    </a>
+  </aside>
+
+  <main id="main-content">
+    <section class="hero compact">
+      <div class="hero-content">
+        <span class="eyebrow">GIS Profile</span>
+
+        <h1>
+          Geospatial analysis for environmental management
+        </h1>
+
+        <p>
+          Mapping, remote sensing, and spatial data processing for natural resource
+          analysis and risk management.
+        </p>
+
+        <div class="hero-actions">
+          <a
+            class="btn-brand"
+              href="assets/docs/GIS_en_leonardo_medina.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>
+            Download GIS CV
+          </a>
+
+          <a class="btn-ghost" href="forestry.html">
+            View Forestry Profile
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <span class="kicker">Profile</span>
+        <h2>GIS Analyst</h2>
+
+        <p>
+          Forestry Engineer with a track record of applying GIS solutions to
+          environmental and territorial projects. Specialized in remote sensing,
+          geospatial analysis, and automation using current technologies and standards.
+          <br>
+      <b>Co-author of scientific publications in the forestry field.</b>
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-xl-3">
+          <article class="skill-card">
+            <div class="icon">
+              <i class="bi bi-water" aria-hidden="true"></i>
+            </div>
+
+            <h3>Spatial and Terrain Analysis</h3>
+
+            <p>
+              Terrain modeling, watershed delineation, hydrologic analysis,
+              accessibility and routing, land suitability assessment, and spatial
+              risk evaluation.
+            </p>
+
+            <div class="text-center">
+              <span class="kicker">
+                QGIS, ArcGIS Pro, GEE
+              </span>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-xl-3">
+          <article class="skill-card">
+            <div class="icon">
+              <i class="bi bi-sun" aria-hidden="true"></i>
+            </div>
+
+            <h3>Remote Sensing</h3>
+
+            <p>
+              Satellite imagery processing, multitemporal analysis, land-cover
+              classification, and environmental change monitoring.
+            </p>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-xl-3">
+          <article class="skill-card">
+            <div class="icon">
+              <i class="bi bi-database" aria-hidden="true"></i>
+            </div>
+
+            <h3>Spatial Data</h3>
+
+            <p>
+              Integration and management of vector and raster data, spatial queries,
+              and geospatial database preparation.
+            </p>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-xl-3">
+          <article class="skill-card">
+            <div class="icon">
+              <i class="bi bi-file-code" aria-hidden="true"></i>
+            </div>
+
+            <h3>Automation</h3>
+
+            <p>
+              ETL workflows for data acquisition, cleaning, transformation, and
+              loading, along with indicator development and reproducible reporting.
+            </p>
+
+            <div class="text-center">
+              <span class="kicker">
+                Python, SQL, GDAL
+              </span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="experience">
+      <div class="section-heading">
+        <span class="kicker">Selected Experience</span>
+        <h2>GIS, Data, and Environmental Analysis</h2>
+
+        <p>
+          Professional experience applying geospatial analysis, automation, and data
+          processing to environmental and operational challenges.
+        </p>
+      </div>
+
+      <article class="experience-card">
+        <div class="experience-top">
+          <div>
+            <h3>Environmental Advisor</h3>
+            <p class="experience-org">
+              Operational Response Unit (URO) · Milla River Early Warning System
+            </p>
+          </div>
+
+          <span class="experience-date">Apr 2026–Present</span>
+        </div>
+
+        <ul>
+          <li>
+            Automated the acquisition, cleaning, and consolidation of more than
+            115,000 meteorological records from two weather stations using Python.
+          </li>
+          <li>
+            Performed time-series analysis and quality control on hydrometeorological
+            data from ground-based stations and satellite sources.
+          </li>
+          <li>
+            Processed and integrated geospatial and satellite data using QGIS and
+            Python to incorporate territorial variables into the watershed's
+            hydrometeorological analysis.
+          </li>
+        </ul>
+      </article>
+
+      <article class="experience-card">
+        <div class="experience-top">
+          <div>
+            <h3>Data Analyst</h3>
+            <p class="experience-org">Transportation-Sector Client</p>
+          </div>
+
+          <span class="experience-date">Jun–Dec 2025</span>
+        </div>
+
+        <ul>
+          <li>
+            Designed and implemented ETL pipelines with Python and SQL to integrate,
+            clean, and transform operational data from Excel, CSV, and PostgreSQL.
+          </li>
+          <li>
+            Performed geospatial analysis with Pandas, GeoPandas, and mapping tools
+            to examine patterns by station, route, and location.
+          </li>
+          <li>
+            Developed automated Power BI dashboards to monitor demand, revenue,
+            incidents, and operational performance.
+          </li>
+        </ul>
+      </article>
+
+      <article class="experience-card">
+        <div class="experience-top">
+          <div>
+            <h3>Data Analyst and Automation Specialist</h3>
+            <p class="experience-org">Odontology Coach</p>
+          </div>
+
+          <span class="experience-date">Feb 2025–Jan 2026</span>
+        </div>
+
+        <ul>
+          <li>
+            Designed and automated operational monitoring for clinics using more
+            than 15 performance indicators.
+          </li>
+          <li>
+            Developed data-entry, transformation, and validation workflows in
+            Google Sheets using Google Apps Script.
+          </li>
+          <li>
+            Produced automated reports to improve performance tracking and reduce
+            manual tasks.
+          </li>
+        </ul>
+      </article>
+
+      <article class="experience-card">
+        <div class="experience-top">
+          <div>
+            <h3>Field Engineer and Botanical Consultant</h3>
+            <p class="experience-org">
+              Botanical Garden of Mérida · Universidad de Los Andes
+            </p>
+          </div>
+
+          <span class="experience-date">2019 · 2021–2022</span>
+        </div>
+
+        <ul>
+          <li>
+            Inventoried and georeferenced more than 200 plant species, including
+            specimen collection and photographic documentation.
+          </li>
+          <li>
+            Integrated field records with taxonomic, ecological, and geographic
+            information obtained from specialized sources.
+          </li>
+          <li>
+            Produced thematic maps in QGIS; the results were incorporated into
+            three botanical publications.
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section section-soft" id="work">
+      <div class="section-heading">
+        <span class="kicker">Case Studies and Projects</span>
+        <h2>Selected Geospatial Work</h2>
+
+        <p>
+          These projects combine spatial analysis, environmental data, and technical
+          documentation.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <article class="project-card">
+            <img
+              src="https://res.cloudinary.com/arawato666/image/upload/v1785256643/uro_sat_r0kgag.png"
+              alt="Map developed for the Milla River Early Warning System"
+              loading="lazy"
+            >
+
+            <div class="project-body">
+              <div class="project-meta">In Progress · 2026</div>
+              <h3>Milla River Early Warning System</h3>
+
+              <p>
+                Biophysical, geomorphological, and hydrological characterization;
+                integration of territorial datasets; automation; and
+                hydrometeorological analysis.
+                <br><b>Project in progress</b>
+              </p>
+
+              <ul class="tags">
+                <li>QGIS</li>
+                <li>GDAL</li>
+                <li>Python</li>
+                <li>GEE</li>
+                <li>ERA5</li>
+                <li>Jupyter</li>
+              </ul>
+
+              <a class="btn-outline-brand" href="sat-rio-milla.html">
+                Preview
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-6">
+          <article class="project-card">
+            <img
+              src="https://res.cloudinary.com/arawato666/image/upload/v1785255070/comparison_2020_2025_a9birh.png"
+              alt="Multitemporal comparison of Venezuela's last glacier"
+              loading="lazy"
+            >
+
+            <div class="project-body">
+              <div class="project-meta">Remote Sensing · Environmental Project</div>
+              <h3>Monitoring Venezuela's Last Glacier</h3>
+
+              <p>
+                Multitemporal satellite imagery and time-series analysis to assess
+                changes in snow and ice cover in a high-mountain environment.
+              </p>
+
+              <ul class="tags">
+                <li>Google Earth Engine</li>
+                <li>GEE API</li>
+                <li>Remote Sensing</li>
+                <li>Time Series</li>
+                <li>Python</li>
+              </ul>
+
+              <a
+                class="btn-outline-brand"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://glaciar-humboldt-ve.streamlit.app/"
+              >
+                Web GIS App
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-6">
+          <article class="project-card">
+            <img
+              src="https://res.cloudinary.com/arawato666/image/upload/v1785254829/2017_LULC_map_mr6ezy.png"
+              alt="Land-cover map of Venezuela"
+              loading="lazy"
+            >
+
+            <div class="project-body">
+              <div class="project-meta">Land Cover · National Scale</div>
+              <h3>Land-Cover and Land-Use Change in Venezuela</h3>
+
+              <p>
+                Analysis of a land-cover time series to identify areas under pressure
+                and patterns of territorial change.
+              </p>
+
+              <ul class="tags">
+               <li>Esri Sentinel-2 LULC</li>
+                <li>LULC</li>
+                <li>Python</li>
+                <li>Protected areas</li>
+                <li>QGIS</li>
+              </ul>
+
+              <a
+                class="btn-outline-brand"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://leomed512.github.io/venezuela_LUC_2017_2024/"
+              >
+                Web GIS App
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-6">
+          <article class="project-card">
+            <img
+              src="https://res.cloudinary.com/arawato666/image/upload/v1762504272/dashboard_1_ocmryd.png"
+              alt="New York City urban-tree health dashboard"
+              loading="lazy"
+            >
+
+            <div class="project-body">
+              <div class="project-meta">Environmental Data · Urban Forestry</div>
+              <h3>New York City Urban-Tree Health</h3>
+
+              <p>
+                Analysis of approximately 650,000 records integrating species,
+                structure, location, and tree-condition variables.
+              </p>
+
+              <ul class="tags">
+                <li>Python</li>
+                <li>Pandas</li>
+                <li>Spatial Data</li>
+              </ul>
+
+              <a
+                class="btn-outline-brand"
+                href="https://github.com/leomed512/Tree_health_NY"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Repository
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-strip" id="contact">
+      <h2>Contact</h2>
+
+      <p>I am available for on-site, field, hybrid, or remote work opportunities.</p>
+
+
+      <div class="contact-links">
+        <a href="mailto:leomedinast@gmail.com">
+          <i class="bi bi-envelope" aria-hidden="true"></i>
+          leomedinast@gmail.com
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/leomedinast/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-linkedin" aria-hidden="true"></i>
+          LinkedIn
+        </a>
+
+        <a
+          href="https://github.com/leomed512/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-github" aria-hidden="true"></i>
+          GitHub
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span data-year></span> Leonardo Medina</span>
+
+    <img
+      src="https://res.cloudinary.com/arawato666/image/upload/v1711993726/Leo-Logo_y855da.png"
+      alt="Leonardo Medina logo"
+      class="footer-logo"
+      loading="lazy"
+    >
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to top">
+    <i class="bi bi-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

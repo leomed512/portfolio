@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://leomed512.github.io/leomedina/sitemap.xml
