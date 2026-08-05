@@ -383,8 +383,14 @@ img { max-width: 100%; height: auto; }
   color: #dfe9e6;
 }
 .profile-photo {
-  display: block; width: 108px; aspect-ratio: 1; object-fit: cover;
-  margin: 0 auto 14px; border: 5px solid rgba(255,255,255,.12); border-radius: 50%;
+  display: block;
+  width: 108px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center 15%; /* o center 15%, 25%, etc. */
+  margin: 0 auto 14px;
+  border: 5px solid rgba(255,255,255,.12);
+  border-radius: 50%;
 }
 .sidebar-name { margin: 0; color: #fff; text-align: center; font-size: 1.35rem; font-weight: 700; }
 .sidebar-role { margin: 6px 0 18px; color: #a9bbb6; text-align: center; font-size: .88rem; }
