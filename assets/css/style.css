@@ -12,6 +12,105 @@
   --shadow: 0 14px 34px rgba(22, 54, 48, .10);
 }
 
+/* Referencia institucional de la URO
+ */
+
+.uro-reference {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.75rem 1rem;
+
+  margin-top: 1.75rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid rgba(37, 71, 54, 0.16);
+}
+
+.uro-reference__logo {
+  display: block;
+  width: clamp(4.5rem, 8vw, 5.5rem);
+  height: clamp(4.5rem, 8vw, 5.5rem);
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.uro-reference__identity {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  line-height: 1.3;
+}
+
+.uro-reference__label {
+  margin-bottom: 0.12rem;
+  color: #68746e;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.uro-reference__identity strong {
+  color: #25352d;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.94rem;
+  font-weight: 700;
+}
+
+.uro-reference__links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.45rem 1rem;
+}
+
+.uro-reference__links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.38rem;
+
+  color: #68746e;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+
+  transition: color 160ms ease;
+}
+
+.uro-reference__links a:hover {
+  color: #356c52;
+}
+
+.uro-reference__links a:focus-visible {
+  color: #356c52;
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+.uro-reference__links i {
+  font-size: 0.92rem;
+}
+
+@media (max-width: 767.98px) {
+  .uro-reference {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .uro-reference__links {
+    grid-column: 1 / -1;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 420px) {
+  .uro-reference__logo {
+    width: clamp(4rem, 20vw, 4.8rem);
+    height: clamp(4rem, 20vw, 4.8rem);
+  }
+}
+
 /* GALERÍA PRELIMINAR DEL CASO DE ESTUDIO */
 
 
