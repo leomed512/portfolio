@@ -530,9 +530,10 @@ main { margin-left: 290px; }
 }
 .hero.compact { min-height: 54vh; }
 .hero-content { position: relative; max-width: 850px; z-index: 1; }
+.mobile-profile-photo { display: none; }
 .eyebrow {
   display: inline-block; margin-bottom: 14px; color: #bfe4da;
-  text-transform: uppercase; letter-spacing: .14em; font-size: .78rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .14em; font-size: 1rem; font-weight: 700;
 }
 .hero h1 { margin: 0 0 18px; color: #fff; font-size: clamp(2.35rem, 5vw, 4.65rem); line-height: 1.05; }
 .hero p { max-width: 760px; margin: 0 0 28px; font-size: clamp(1.08rem, 2vw, 1.35rem); color: #eef7f4; }
@@ -639,12 +640,51 @@ footer { margin-left: 290px; padding: 24px clamp(24px, 6vw, 92px); background: #
   main, footer { margin-left: 0; }
   body.nav-open::after { content: ""; position: fixed; inset: 0; z-index: 1025; background: rgba(0,0,0,.42); }
   body.nav-open .sidebar { z-index: 1030; }
-  .hero { min-height: 72vh; }
+
+  .hero {
+    align-items: flex-start;
+    min-height: auto;
+    padding-top: 38px;
+    padding-bottom: 56px;
+  }
+
+  .hero-content {
+    --mobile-profile-size: clamp(88px, 10vw, 96px);
+    width: 100%;
+    padding-top: calc(var(--mobile-profile-size) + 14px);
+  }
+
+  .mobile-profile-photo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 2;
+    display: block;
+    width: var(--mobile-profile-size);
+    height: var(--mobile-profile-size);
+    object-fit: cover;
+    object-position: center 15%;
+    border: 5px solid rgba(255,255,255,.18);
+    border-radius: 50%;
+    box-shadow: 0 12px 30px rgba(0,0,0,.24);
+    transform: translateX(-50%);
+    transition: opacity .2s ease, visibility .2s ease;
+  }
+
+  body.nav-open .mobile-profile-photo {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 @media (max-width: 767px) {
   .section { padding: 58px 20px; }
-  .hero { padding: 78px 22px 54px; min-height: 78vh; }
+  .hero { min-height: auto; padding: 26px 22px 48px; }
   .hero.compact { min-height: 60vh; }
+  .hero-content {
+    --mobile-profile-size: clamp(78px, 22vw, 88px);
+    padding-top: calc(var(--mobile-profile-size) + 12px);
+  }
   .experience-top { display: block; }
   .experience-date { display: block; margin-top: 8px; }
   .metrics { grid-template-columns: 1fr; }
